@@ -1,0 +1,5 @@
+C:\Users\Jeppe\source\repos\Simple Interface Manipulation Project (SIMP)\Simple Interface Manipulation Project (SIMP)\obj\Debug\Simple Interface Manipulation Project (SIMP).csprojAssemblyReference.cache
+C:\Users\Jeppe\source\repos\Simple Interface Manipulation Project (SIMP)\Simple Interface Manipulation Project (SIMP)\obj\Debug\MainWindow.g.cs
+C:\Users\Jeppe\source\repos\Simple Interface Manipulation Project (SIMP)\Simple Interface Manipulation Project (SIMP)\obj\Debug\App.g.cs
+C:\Users\Jeppe\source\repos\Simple Interface Manipulation Project (SIMP)\Simple Interface Manipulation Project (SIMP)\obj\Debug\Simple Interface Manipulation Project (SIMP)_MarkupCompile.cache
+C:\Users\Jeppe\source\repos\Simple Interface Manipulation Project (SIMP)\Simple Interface Manipulation Project (SIMP)\obj\Debug\Simple Interface Manipulation Project (SIMP)_MarkupCompile.lref
