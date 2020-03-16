@@ -8,7 +8,7 @@ namespace Simple_Interface_Manipulation_Project__SIMP_
 {
     class Backend
     {
-        static void Main(string[] args)
+        static void Functions(string[] args)
         {
             Console.WriteLine(Multi(20, 4));
             Console.WriteLine(Mod(20, 3)[0]);
