@@ -24,18 +24,25 @@ namespace Simple_Interface_Manipulation_Project__SIMP_
         {
             InitializeComponent();
 
-            int count = 0;
-            string[] buttonFill = { "*", "/", "Clear", "7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "+", "-" };
+            int count = 0; //Definerer count variabel til brug i for loop, for at holde styr på hvilket felt vi er i
+            string[] buttonFill = { "*", "/", "Clear", "7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "+", "-" }; // De karakterer som skal være i knapperne
+            int margin = 3; //Et variabel, der ændrer margins af label og knapper
+            label1.Margin = new Thickness(margin, margin, margin, margin+3); //Sætter margin af label. Gøres her da 4 værdier ellers skulle ændres i XAML-filen, hver gang jeg skulle teste hvordan en anden margin så ud
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++)//For loop der looper igennem rows
             {
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < 3; j++)//For loop der looper igennem collumns
                 {
-                    Button MyControl1 = new Button();
-                    MyControl1.Content = buttonFill[count];
-                    MyControl1.Name = "Button" + count.ToString();
-                    MyControl1.HorizontalAlignment = HorizontalAlignment.Stretch;
+                    Button MyControl1 = new Button(); //Initilizer en instance af classen "Button", basicly laver en ny knap
+                    MyControl1.Content = buttonFill[count]; //Sætter hvad der står i knappen, efter karakteren i arrayet der på den plads count svarer til
+                    MyControl1.Name = "Button" + count.ToString(); //Giver den et navn, den senere kan refereres til med, så man kan give den controls
+                    MyControl1.HorizontalAlignment = HorizontalAlignment.Stretch; //Måden man får ting til at stretch til kanten, er ved at sætte dets alignment til stretch.
                     MyControl1.VerticalAlignment = VerticalAlignment.Stretch;
+                    MyControl1.Margin = new Thickness(margin,margin,margin,margin); //Sætter størrelsen af margin for knappen, så hvor langt der er fra kanten af knappen til kantens af dens cell
+                    MyControl1.BorderThickness = new Thickness(0); 
+                    BrushConverter bc = new BrushConverter();
+                    Brush brush = (Brush)bc.ConvertFrom("#FFFFFF");
+                    MyControl1.Background = brush;
 
                     Grid.SetColumn(MyControl1, j);
                     Grid.SetRow(MyControl1, i);
