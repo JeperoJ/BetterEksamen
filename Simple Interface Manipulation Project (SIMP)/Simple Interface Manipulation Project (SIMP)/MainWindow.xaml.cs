@@ -24,7 +24,7 @@ namespace Simple_Interface_Manipulation_Project__SIMP_
         {
             InitializeComponent();
 
-            int count = 1;
+            int count = 0;
             string[] buttonFill = { "*", "/", "Clear", "7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "+", "-" };
 
             for (int i = 0; i < 5; i++)
@@ -32,7 +32,7 @@ namespace Simple_Interface_Manipulation_Project__SIMP_
                 for (int j = 0; j < 3; j++)
                 {
                     Button MyControl1 = new Button();
-                    MyControl1.Content = buttonFill[count-1];
+                    MyControl1.Content = buttonFill[count];
                     MyControl1.Name = "Button" + count.ToString();
                     MyControl1.HorizontalAlignment = HorizontalAlignment.Stretch;
                     MyControl1.VerticalAlignment = VerticalAlignment.Stretch;
