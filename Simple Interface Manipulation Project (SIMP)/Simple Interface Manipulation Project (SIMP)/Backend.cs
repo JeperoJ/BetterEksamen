@@ -26,6 +26,25 @@ namespace Simple_Interface_Manipulation_Project__SIMP_
                 return result;
             }
 
+            long Factorial(long number)
+            {
+                for (long i = number-1; i > 0; i--)
+                {
+                    number = Multi(number, i);
+                }
+                return number;
+            }
+
+            long Potens(long number, long potens)
+            {
+                long result = number;
+                for (int i = 0; i < potens; i++)
+                {
+                    result *= number;
+                }
+                return result;
+            }
+
             long[] Mod(long dividend, long divisor)
             {
                 long[] result = { dividend, 0 };
